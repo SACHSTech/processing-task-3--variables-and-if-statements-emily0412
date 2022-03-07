@@ -122,11 +122,11 @@ public class Sketch extends PApplet {
   public void draw() {
 
     // getting the values for the time
-    int s = second();  // Values from 0 - 59
-    int m = minute();  // Values from 0 - 59
-    int h = hour() - 5;    // Values from 0 - 23
+    int intSec = second();  // Values from 0 - 59
+    int intMin = minute();  // Values from 0 - 59
+    int intHr = hour() - 5;    // Values from 0 - 23
 
-    String strTime = h + ":" + m + ":" + s;
+    String strTime = intHr + ":" + intMin + ":" + intSec;
 
     // printing the time to the screen
     textSize(60);
